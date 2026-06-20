@@ -4,10 +4,7 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
-  vite: {
-    // @ts-expect-error
-    nitro: {
-      preset: "vercel",
-    },
+  nitro: {
+    preset: "vercel",
   },
 });
